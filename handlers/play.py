@@ -113,16 +113,16 @@ async def generate_cover(title, thumbnail, ctitle):
 
 
 @Client.on_message(
-    command(["playlist", f"playlist@{BOT_USERNAME}"]) & filters.group & ~filters.edited
+    command(["playlist", f"playlist@IMLALISAbot"]) & filters.group & ~filters.edited
 )
 async def playlist(client, message):
 
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/CGSsupport"),
                 InlineKeyboardButton(
-                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/CGSupdates"
                 ),
             ]
         ]
@@ -192,7 +192,7 @@ def r_ply(type_):
 
 
 @Client.on_message(
-    command(["player", f"player@{BOT_USERNAME}"]) & filters.group & ~filters.edited
+    command(["player", f"player@IMLALISAbot"]) & filters.group & ~filters.edited
 )
 @authorized_users_only
 async def settings(client, message):
@@ -215,7 +215,7 @@ async def settings(client, message):
 
 
 @Client.on_message(
-    command(["music", f"music@{BOT_USERNAME}"])
+    command(["music", f"music@IMLALISAbot"])
     & ~filters.edited
     & ~filters.bot
     & ~filters.private
@@ -262,9 +262,9 @@ async def p_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/CGSsupport"),
                 InlineKeyboardButton(
-                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/XGSupdates"
                 ),
             ],
             [InlineKeyboardButton("🔙 Go Back", callback_data="menu")],
@@ -310,9 +310,9 @@ async def m_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/CGSsupport"),
                 InlineKeyboardButton(
-                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/CGSupdates"
                 ),
             ],
             [InlineKeyboardButton("🔙 Go Back", callback_data="menu")],
@@ -493,7 +493,7 @@ async def m_cb(b, cb):
             )
 
 
-@Client.on_message(command(["play", f"play@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["play", f"play@IMLALISAbot"]) & other_filters)
 async def play(_, message: Message):
     
     bttn = InlineKeyboardMarkup(
@@ -598,7 +598,7 @@ async def play(_, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/CGSupdates"
                     )
                 ],
             ]
@@ -648,7 +648,7 @@ async def play(_, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/CGSupdates"
                     )
                 ],
             ]
@@ -743,7 +743,7 @@ async def play(_, message: Message):
                     ],
                     [
                         InlineKeyboardButton(
-                            "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                            "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/CGSupdates"
                         )
                     ],
                 ]
@@ -874,7 +874,7 @@ async def lol_cb(b, cb):
                 InlineKeyboardButton("• Mᴇɴᴜ", callback_data="menu"),
                 InlineKeyboardButton("• Cʟᴏsᴇ", callback_data="cls"),
             ],
-            [InlineKeyboardButton("• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}")],
+            [InlineKeyboardButton("• Cʜᴀɴɴᴇʟ", url=f"https://t.me/CGSupdates")],
         ]
     )
     await generate_cover(title, thumbnail, ctitle)
@@ -1045,7 +1045,7 @@ async def ytplay(_, message: Message):
                 InlineKeyboardButton("• Mᴇɴᴜ", callback_data="menu"),
                 InlineKeyboardButton("• Cʟᴏsᴇ", callback_data="cls"),
             ],
-            [InlineKeyboardButton("• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}")],
+            [InlineKeyboardButton("• Cʜᴀɴɴᴇʟ", url=f"https://t.me/CGSupdates")],
         ]
     )
     await generate_cover(title, thumbnail, ctitle)
